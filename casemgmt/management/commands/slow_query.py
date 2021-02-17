@@ -20,14 +20,3 @@ class Command(BaseCommand):
             end = time.perf_counter()
             print(f"query completed in {end - start:0.3f}s")
         print(result)
-
-        # while True:
-        #     # Run OSO (which runs in loop too), and handle unhandled exceptions (KB Interrupt is already handled within
-        #     # repl as a normal return.
-        #     try:
-
-        #         print(list(Oso.query(query, accept_expression=True)))
-        #         #Oso.repl()
-        #         return
-        #     except Exception as e:
-        #         traceback.print_exc()
